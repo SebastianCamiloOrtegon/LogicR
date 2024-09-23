@@ -11,3 +11,11 @@ _**LOGICR**_
 * Bayron Andrés Pedraza Ramirez
 * Sebastian Camilo Ortegón Hernandez
 * Oscar Santiago Serrano Cipriam
+
+# Descripción y/o Introducción (Algo atractivo y novedoso)
+
+# Poster o Brochure (Tunear)
+
+# Imagen tipo banner de la implementación del proyecto (resultado final)
+
+# Vídeo final del proyecto:
