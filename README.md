@@ -1,4 +1,4 @@
-# 1. Título del proyecto
+# Título del proyecto
 _**LOGICR**_
 * **L**ogica
 * **O**rientada para 
@@ -7,7 +7,7 @@ _**LOGICR**_
 * **C**odigo con
 * **R**obotica
 
-# 2. Integrantes
+# Integrantes
 * Bayron Andrés Pedraza Ramirez
 * Sebastian Camilo Ortegón Hernandez
 * Oscar Santiago Serrano Cipriam
