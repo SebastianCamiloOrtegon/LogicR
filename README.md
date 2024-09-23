@@ -1,5 +1,4 @@
-# Título del proyecto
-_**LOGICR**_
+# **LOGICR**_
 * **L**ogica
 * **O**rientada para 
 * **G**enerar
