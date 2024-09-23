@@ -16,10 +16,8 @@ En  los  últimos  años  nos  encontramos  en  la  Cuarta Revolución  Industri
 Nuestro proyecto, Logic R, surge con la misión de preparar a las futuras generaciones para este nuevo escenario.
 Acercando a los niño al mundo de la tecnología y darle las herramientas  para  convertirse  en  los  arquitectos  del futuro.
 
-
-
 # Poster o Brochure (Tunear)
-
+![Beige Red Black Illustrative Basketball Tournament Poster](https://github.com/user-attachments/assets/fd5f5cd1-056d-4fc3-a0e3-60252525e803)
 # Imagen tipo banner de la implementación del proyecto (resultado final)
 
 # Vídeo final del proyecto:
