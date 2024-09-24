@@ -51,10 +51,10 @@ motor3_retroceso = Pin(25, Pin.OUT)
 motor4_avance = Pin(26, Pin.OUT)
 motor4_retroceso = Pin(27, Pin.OUT)
 
-# Conexión de ESP32 a red WIFI
+# Conexión de ESP32 a red WIFI (Si se tiene esta parte de codigo en el archivo boot.py dentro de la ESP32, no es necesario usarlo en el codigo principal)
 """wf = network.WLAN(network.STA_IF)
 wf.active(True)
-wf.connect("Redmi Note 9", "maincramaincra")
+wf.connect("Nombre de red WIFI", "contraseña")
 while not wf.isconnected():
     print(".")
     utime.sleep(1)
@@ -116,12 +116,11 @@ def exec(data):
     datatext = data.decode('uft-8')[:-2] #Conversión de Buffer a texto
     print(datatext)
     global data_pass
-    # data_pass = None
     if data_pass!= None:
         print(data_pass)
         print("previo")
         dataint = int(datatext)
-        print(dataint*2)
+       # print(dataint*2)
         servo(data_pass, dataint) #Ejecución de movimiento de servo
         data_pass = None
     #Servos escogidos
@@ -129,7 +128,6 @@ def exec(data):
         if datatext == "s0":
             print("Hola")
             data_pass = 0
-            print("Hola")
         elif datatextd == "s1":
             data_pass = 1
         elif datatext == "s2":
@@ -146,34 +144,35 @@ def exec(data):
         establecer_velocidad(motor2_avance, motor2_retroceso, 0, en2)
         establecer_velocidad(motor3_avance, motor3_retroceso, 0, en3)
         establecer_velocidad(motor4_avance, motor4_retroceso, 0, en4)
+        time.sleep(2)
     elif datatext == "s11":
-        print("Hola")
          # Mueve todos los motores hacia adelante al 80% de velocidad
         establecer_velocidad(motor1_avance, motor1_retroceso, 820, en1)
         establecer_velocidad(motor2_avance, motor2_retroceso, 820, en2)
         establecer_velocidad(motor3_retroceso, motor3_avance, 820, en3) # Invertido
         establecer_velocidad(motor4_retroceso, motor4_avance, 820, en4) # Invertido
+        time.sleep(2)
     elif datatext == "s12":
-        print("Hola")
         # Mueve todos los motores hacia atras al 80% de velocidad
         establecer_velocidad(motor1_retroceso, motor1_avance, 820, en1)
         establecer_velocidad(motor2_retroceso, motor2_avance, 820, en2)
         establecer_velocidad(motor3_avance, motor3_retroceso, 820, en3) # Invertido
         establecer_velocidad(motor4_avance, motor4_retroceso, 820, en4) # Invertido
+        time.sleep(2)
     elif datatext == "s13":
-        print("Hola")
         # Motorreductores 2 y 1 hacia adelante, 4 y 3 hacia atrás (IZQUIERDA)
         establecer_velocidad(motor1_avance, motor1_retroceso, 820, en1)
         establecer_velocidad(motor2_avance, motor2_retroceso, 820, en2)
         establecer_velocidad(motor3_avance, motor3_retroceso, 820, en3)
         establecer_velocidad(motor4_avance, motor4_retroceso, 820, en4)
+        time.sleep(2)
     elif datatext == "s14":
         # Motorreductores 4 y 3 hacia adelante, 2 y 1 hacia atrás (DERECHA)
         establecer_velocidad(motor1_retroceso, motor1_avance, 820, en1)
         establecer_velocidad(motor2_retroceso, motor2_avance, 820, en2)
         establecer_velocidad(motor3_retroceso, motor3_avance, 820, en3)
         establecer_velocidad(motor4_retroceso, motor4_avance, 820, en4)
-        print("Hola")
+        time.sleep(2)
     elif datatext == "s15":
         print("Hola")
         # Motorreductores 1 y 3 hacia adelante, 2 y 4 hacia atrás (GIRO COMPLETO A LA IZQUIERDA)
@@ -181,39 +180,29 @@ def exec(data):
         establecer_velocidad(motor2_retroceso, motor2_avance, 820, en2)
         establecer_velocidad(motor3_retroceso, motor3_avance, 820, en3)
         establecer_velocidad(motor4_avance, motor4_retroceso, 820, en4)
+        time.sleep(2)
     elif datatext == "s16":
-        print("Hola")
         # Motorreductores 2 y 4 hacia adelante, 1 y 3 hacia atrás (GIRO COMPLETO A LA DERECHA)
         establecer_velocidad(motor1_retroceso, motor1_avance, 820, en1)
         establecer_velocidad(motor2_avance, motor2_retroceso, 820, en2)
         establecer_velocidad(motor3_avance, motor3_retroceso, 820, en3)
         establecer_velocidad(motor4_retroceso, motor4_avance, 820, en4)
+        time.sleep(2)
     elif datatext == "s17":
-        print("Hola")
         # Motorreductores 2 y 3 se mantienen bloqueados, 1 hacia adelante y 4 hacia atrás (GIRO HACIA LA IZQUERDA SOBRE UNA RUEDA)
         establecer_velocidad(motor1_avance, motor1_retroceso, 820, en1)
         establecer_velocidad(motor2_avance, motor2_retroceso, 0, en2)
         establecer_velocidad(motor3_avance, motor3_retroceso, 0, en3)
         establecer_velocidad(motor4_avance, motor4_retroceso, 820, en4)
+        time.sleep(2)
     elif datatext == "s18":
-        print("Hola")
         # Motorreductores 2 y 3 se mantienen bloqueados, 1 hacia atrás y 4 hacia adelante (GIRO HACIA LA DERECHA SOBRE UNA RUEDA)
         establecer_velocidad(motor1_retroceso, motor1_avance, 820, en1)
         establecer_velocidad(motor2_avance, motor2_retroceso, 0, en2)
         establecer_velocidad(motor3_avance, motor3_retroceso, 0, en3)
         establecer_velocidad(motor4_retroceso, motor4_avance, 820, en4)
-    """if data == b'A':
-        print("Arriba")
-    elif data == b'B':
-        print("Abajo")
-    elif data == b'C':
-        print("Izquierda")
-    elif data == b'D':
-        print("Derecha")
-    elif data == b'E':
-        print("Detener")
-    else:
-        print("Otra opcion")"""
+        time.sleep(2)
+        
 #Conexión por socket (NO MODIFICAR)  
 class Server:
     def __init__(self, host="0.0.0.0", port=3000, backlog=5, timeout=20):
