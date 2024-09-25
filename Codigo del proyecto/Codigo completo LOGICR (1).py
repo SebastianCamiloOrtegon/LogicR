@@ -8,13 +8,13 @@ import time
 import struct #entero a Buffer
 #Configuración de servos
 from machine import Pin #Motores
-servos = [machine.PWM(Pin(i), freq=50, duty=0) for i in [23,21,22,19]]
+servos = [machine.PWM(Pin(i), freq=50, duty=0) for i in [32,33,25,26]]
 #Configuración de funciones para motorreductores
 # Configurar PWM para EN1, EN2, EN3, EN4
-en1 = PWM(Pin(32))
-en2 = PWM(Pin(33))
-en3 = PWM(Pin(19))
-en4 = PWM(Pin(20))
+en1 = PWM(Pin(18))
+en2 = PWM(Pin(22))
+en3 = PWM(Pin(0))
+en4 = PWM(Pin(4))
 # Establecer la frecuencia PWM en 1 kHz
 en1.freq(1000)
 en2.freq(1000)
@@ -39,17 +39,17 @@ def establecer_velocidad(pin_avance, pin_retroceso, ciclo_trabajo, en_pin):
 
 # Definición de pines para los motorreductores
 # Motorreductor 1 (L293D A)
-motor1_avance = Pin(12, Pin.OUT)
-motor1_retroceso = Pin(13, Pin.OUT)
+motor1_avance = Pin(5, Pin.OUT)
+motor1_retroceso = Pin(17, Pin.OUT)
 # Motorreductor 2 (L293D A)
-motor2_avance = Pin(16, Pin.OUT)
-motor2_retroceso = Pin(17, Pin.OUT)
+motor2_avance = Pin(23, Pin.OUT)
+motor2_retroceso = Pin(19, Pin.OUT)
 # Motorreductor 3 (L293D B)
-motor3_avance = Pin(18, Pin.OUT)
-motor3_retroceso = Pin(25, Pin.OUT)
+motor3_avance = Pin(11, Pin.OUT)
+motor3_retroceso = Pin(16, Pin.OUT)
 # Motorreductor 4 (L293D B)
-motor4_avance = Pin(26, Pin.OUT)
-motor4_retroceso = Pin(27, Pin.OUT)
+motor4_avance = Pin(2, Pin.OUT)
+motor4_retroceso = Pin(15, Pin.OUT)
 
 # Conexión de ESP32 a red WIFI (Si se tiene esta parte de codigo en el archivo boot.py dentro de la ESP32, no es necesario usarlo en el codigo principal)
 """wf = network.WLAN(network.STA_IF)
@@ -60,8 +60,8 @@ while not wf.isconnected():
     utime.sleep(1)
 print(wf.ifconfig())"""
 #Pines sensor ultrasonido
-trigPin = Pin(33, Pin.OUT)
-echoPin = Pin(32, Pin.IN)
+trigPin = Pin(14, Pin.OUT)
+echoPin = Pin(12, Pin.IN)
 #Función ultrasonido
 def measure_distance():
     
