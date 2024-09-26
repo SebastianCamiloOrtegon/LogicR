@@ -24,7 +24,8 @@ Gracias al proyecto los niños de manera intuitiva pueden aprender sobre logica 
 
 
 # Imagen tipo banner de la implementación del proyecto (resultado final)
-![Beige Red Black Illustrative Basketball Tournament Poster (1)](https://github.com/user-attachments/assets/b6782108-2111-4b5b-b08d-118df2540554)
+![image](https://github.com/user-attachments/assets/43e66ca6-f84d-4621-8120-1d059cfc45ad)
+
 
 
 # Vídeo final del proyecto:
