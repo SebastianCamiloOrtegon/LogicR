@@ -19,12 +19,11 @@ Gracias al proyecto los niños de manera intuitiva pueden aprender sobre logica 
 
 
 # Poster o Brochure
-![image](https://github.com/user-attachments/assets/87df04bf-722c-4f92-8540-a1b595502c77)
-https://github.com/SebastianCamiloOrtegon/LogicR/blob/main/Imagenes/Infografia.png
+![](https://github.com/SebastianCamiloOrtegon/LogicR/blob/main/Imagenes/POSTER_page-0001.jpg)
+
 
 # Imagen tipo banner de la implementación del proyecto (resultado final)
-![image](https://github.com/user-attachments/assets/43e66ca6-f84d-4621-8120-1d059cfc45ad)
-https://github.com/SebastianCamiloOrtegon/LogicR/blob/main/Imagenes/POSTER_page-0001.jpg
 
+![](https://github.com/SebastianCamiloOrtegon/LogicR/blob/main/Imagenes/Infografia.png)
 
 # Vídeo final del proyecto:
