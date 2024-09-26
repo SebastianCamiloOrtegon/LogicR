@@ -19,8 +19,7 @@ Gracias al proyecto los niños de manera intuitiva pueden aprender sobre logica 
 
 
 # Poster o Brochure
-![POSTER_page-0001](https://github.com/user-attachments/assets/74d45655-5df5-4d57-83b5-a9019b383725)
-
+![image](https://github.com/user-attachments/assets/87df04bf-722c-4f92-8540-a1b595502c77)
 
 
 # Imagen tipo banner de la implementación del proyecto (resultado final)
