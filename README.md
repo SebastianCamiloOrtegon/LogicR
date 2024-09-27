@@ -27,3 +27,4 @@ Gracias al proyecto los niños de manera intuitiva pueden aprender sobre logica 
 ![](https://github.com/SebastianCamiloOrtegon/LogicR/blob/main/Imagenes/Infografia.png)
 
 # Vídeo final del proyecto:
+https://www.youtube.com/watch?v=GcuSlTJKFjA
